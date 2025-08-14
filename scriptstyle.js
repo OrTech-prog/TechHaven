@@ -185,7 +185,7 @@ function updateCartDisplay() {
     
     // Update cart count
     cartCount.textContent = cartItemCount;
-    cartTotal.textContent = cartTotalAmount.toLocaleString();
+    cartTotal.textContent = cartTotalAmount.toLocaleString('en-ZA');
     
     // Update cart items display
     if (cart.length === 0) {
@@ -197,7 +197,7 @@ function updateCartDisplay() {
                     <h4>${item.name}</h4>
                     <p>Quantity: ${item.quantity}</p>
                 </div>
-                <div class="item-price">$${(item.price * item.quantity).toLocaleString()}</div>
+                <div class="item-price">R${(item.price * item.quantity).toLocaleString('en-ZA')}</div>
             </div>
         `).join('');
     }
