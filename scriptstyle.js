@@ -14,6 +14,20 @@ const searchInput = document.querySelector('.search-input');
 const ctaButton = document.querySelector('.cta-button');
 const contactForm = document.querySelector('.contact-form');
 
+
+// script.js
+
+const navToggle = document.querySelector('.nav-toggle');
+
+if (navToggle && navMenu) { // Check if elements exist before adding event listener
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+}
+
+
+// ... other JavaScript code ...
+
 // Shopping Cart Data
 let cart = [];
 let cartItemCount = 0;
